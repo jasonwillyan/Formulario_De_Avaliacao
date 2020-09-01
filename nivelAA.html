@@ -4,23 +4,42 @@
 	
 	<meta charset="utf-8">
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	 <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
-	 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	 <title>Avaliação de acessibilidade</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>Avaliação de acessibilidade</title>
 	 
 </head>
-<body background="img/7.png" >
+
+<body background="7.png">
+
+	<script src="jquery.js"></script>
+
+	<!--<script>
+
+		$(function(){
+			alert('homem de ferro melhor vingador');
+		});
+
+	</script>
+	-->
+
+	<button id="md"class="btn waves-effect waves-light black" type="submit" name="action">Modo Escuro</button>
+	<a id="top" class="btn-floating btn-large waves-effect waves-light"><i class="medium material-icons">arrow_downward</i></a>
+	<a id="xop" class="btn-floating btn-large waves-effect waves-light"><i class="medium material-icons">arrow_upward</i></a>
+
 	<div class="meio">
+
  		<font face="arial">
+
  			<div class="a"><h1>Avaliação de acessibilidade</h1>
  				<font size="2"><p>Se o que está avaliando satifaz o requisito, Responda <b>sim</b>, caso contrário marque <b>não</b>.</p></font>
- 			</div>
+			 </div>
+			 
  			<text align="center"><p><h4><font color="#008080">Nível de acessibilidade AA</p></h4></text></font>
-
  			<text align="justify"><b><p>Diretriz 1.2 Média Dinâmica ou Contínua: Fornecer alternativas para conteúdo em multimédia dinâmica ou temporal.</p></b></text>
- 			<text align="justify"><p><b>1.2.4</b> São fornecidas legendas, em tempo real, para todo o conteúdo de áudio.</br>
-       <i>Exemplo: um telejornal entra ao vivo, já possuindo legenda simultânea.</i></p></text>
-  			<p>
+ 			<text align="justify"><p><b>1.2.4</b> São fornecidas legendas, em tempo real, para todo o conteúdo de áudio.</br><i>Exemplo: um telejornal entra ao vivo, já possuindo legenda simultânea.</i></p></text>
+			  
+			 <p>
    				<label>
       				<input name="b1" type="radio" checked />
     	  			<span>Sim</span>
@@ -33,7 +52,8 @@
               <input name="b1" type="radio" checked />
               <span>Não se aplica</span>
           </label>
-  			</p>
+			  </p>
+			  
   			<text align="justify"><p><b>1.2.5</b> É fornecida audiodescrição para todo o conteúdo já gravado.</br>
         <i>Exemplo: um filme com audiodescrição: na cozinha, uma moça magra de cabelos pretos, curtos e com   óculos, sentada à mesa. Ela escreve em um caderno.</i></p></text>
   			<p>
@@ -242,7 +262,7 @@
 
 		<a href="nivelAAA.html" class="btn waves-effect waves-light espaco right" target="_self" type="button"> avaliação nível AAA </a>
 		
-		<a href="index.html" class="btn waves-effect waves-light espaco center" target="_self" type="button"> Voltar seção </a>
+		<a href="index.html" class="btn waves-effect waves-light espaco" target="_self" type="button"> Voltar seção </a>
 		
 		<button class="btn waves-effect red espaco" type="submit" name="action">Finalizar</button>
 

@@ -31,6 +31,14 @@ body {
 
 #xop {
     position: fixed;
-    right: 40px;
+	right: 40px;
+	top: 30px;
     
+}
+
+#md {
+	position: fixed;
+	top: 30px;
+	left:20px;
+
 }
