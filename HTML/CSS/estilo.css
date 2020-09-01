@@ -2,23 +2,20 @@ body {
 	
 }
 
-.espaco{
+.espaco {
 	margin-top: 90px;
 
 }
 
-
-
-.meio{
+.meio {
 	background-color: white;
-	margin-top: 5%;
+	margin-top: 2%;
 	margin-right: 15%;
 	margin-left: 15%;
 	border-radius: 25px;
 	padding-bottom: 10%;
 	padding-left: 50px;
-	padding-right: 50px;x
-
+	padding-right: 50px;
 }
 
 .a{
@@ -26,3 +23,7 @@ body {
 	padding-top: 20px;
 }
 
+#top {
+	position: fixed;
+	right: 40px;
+}
