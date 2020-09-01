@@ -25,5 +25,12 @@ body {
 
 #top {
 	position: fixed;
-	right: 40px;
+    right: 40px;
+    top: 100px;
+}
+
+#xop {
+    position: fixed;
+    right: 40px;
+    
 }
