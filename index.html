@@ -3,6 +3,7 @@
 <head>
 
 	<meta charset="utf-8">
+	<script type="text/javascript.js" src="javascript.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,18 +27,23 @@
 	<a id="nop" class="btn-floating btn-large waves-effect waves-light"><i class="medium material-icons">arrow_upward</i></a>
 
 	<div class="meio">
-		<form action="">
+		<form name="form" method="post" action="page.html>
 		<font face="arial">
 
 		<div class="a">
 			<p class="titulo typing-animation">Avaliação de Acessibilidade</p>
-			<text align="justify"><font size="2"><h6><p>Se o que está avaliando atende o requisito marque a opção <b>"Sim"</b>, caso contrário marque <b>"Não"</b>, mas se o requisito não se aplica ao que está avaliando marque a opção <b>"Não se aplica"</b>.</h6></font></text><br><br>
+			<text align="justify"><font size="2"><h6><p>Se o que está avaliando atende o requisito marque a opção <b>"Sim"</b>, caso contrário marque <b>"Não"</b>, mas se o requisito não se aplica ao que está avaliando marque a opção <b>"Não se aplica"</b>. Insira as informações a seguir antes de começar a avaliação.</h6></font></text><br><br>
 		</div>
-
-	<input name="q" class="textbox" onfocus=" if (this.value=='Digite seu nome') this.value = ''" onblur="if (this.value=='') this.value = 'Digite seu nome' "type="text" value="Digite seu nome">
-	<input name="p" class="textbox" onfocus=" if (this.value=='E-mail') this.value = ''" onblur="if (this.value=='') this.value = 'E-mail'" type="text" value="E-mail">
-	<input name="j" class="textbox" onfocus=" if ( this.value=='O que está avaliando?') this.value = ''" onblur="if (this.value=='') this.value = 'O que está avaliando?'" type="text" value="O que está avaliando?">
 	
+			<text align="left"><p><h6><font color="#26a69a"><b>Informações do Avaliador</b></p></h6></text></font>
+			<input id="inp" name="nomepessoal" class="textbox"  type="text" placeholder="Nome Completo">
+			<input id="ie" name="email" class="textbox"  type="text" placeholder="E-mail">
+			<text align="left"><p><h6><font color="#26a69a"><b>O que está Avaliando?</b></p></h6></text></font>
+			<input id="inc" name="nomeconteudo" class="textbox"  type="text" placeholder="Nome">
+			<input id="iu" name="url" class="textbox" type="text" placeholder="Endereço web (Não é obrigatório)">
+		
+	
+
 		<text align="center"><p><h4><font color="#26a69a">Nível de acessibilidade A</p></h4></text></font>
 
 		<text align="justify"><p><b>Diretriz 1.1 Alternativas em Texto: Fornecer alternativas em texto para todo o conteúdo não textual de modo a que o mesmo possa ser apresentado de outras formas, de acordo com as necessidades dos utilizadores, como por exemplo: caracteres ampliados, braille, fala, símbolos ou uma linguagem mais simples.</b></p></text>
@@ -512,13 +518,25 @@
 			</label>
 		</p>
 
-		<a href="nivelAA.html" class="btn waves-effect waves-light espaco right" target="_self" type="button"> avaliação nível AA </a>
+			<a href="nivelAA.html" class="btn waves-effect waves-light espaco right" target="_self" type="button"> avaliação nível AA </a>
 		
-		<button class="btn waves-effect waves-light red espaco" type="submit" name="action">Finalizar</button>
+			<button class="btn waves-effect waves-light red espaco" type="submit" name="submit" value="Finalizar" onclick="formdata()"> Finalizar </button>
 
 		</font>
 	</form>
 	</div>
+
+	<script>
+
+		function formdata() {
+
+			document.write(document.getElementById("form").elements[0].value):
+			
+			var VarNomePessoal= document.getElementById("inp").value;
+			document.writeln("Nome pessoal: " + inp );
+		}
+
+	</script>
 </body>
 
 </html>

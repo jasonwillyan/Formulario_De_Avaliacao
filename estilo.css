@@ -50,3 +50,7 @@ body {
 
 }
 
+.textbox::-webkit-input-placeholder{
+	color: rgb(0,0,0);
+}
+
