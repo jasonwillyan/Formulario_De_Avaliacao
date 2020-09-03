@@ -6,34 +6,36 @@
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
 	<title>Avaliação de acessibilidade</title>
 	 
 </head>
 
 <body background="5.jpg" >
 
-	<script src="jquery.js"></script>
-
-	<!--<script>
+	<script>
 
 		$(function(){
-			alert('homem de ferro melhor vingador');
+			alert('VAMPIRO NÃO BRILHA NO SOL, VAMPIRO MONALISA');
 		});
 
 	</script>
-	-->
+
 
 	<button id="md"class="btn waves-effect waves-light black" type="submit" name="action">Modo Escuro</button>
-	<a id="top" class="btn-floating btn-large waves-effect waves-light"><i class="medium material-icons">arrow_downward</i></a>
-	<a id="nop" class="btn-floating btn-large waves-effect waves-light"><i class="medium material-icons">arrow_upward</i></a>
+	<a id="cima" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_downward</i></a>
+	<a id="baixo" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_upward</i></a>
 
 	<div class="meio">
+		<form name="form" method="post" action="page.html">
  		<font face="arial">
- 			<div class="a"><h1>Avaliação de acessibilidade</h1>
- 				<font size="2"><p>Se o que está avaliando atende o requisito marque a opção <b>"Sim"</b>, caso contrário marque <b>"Não"</b>, mas se o requisito não se aplica ao que está avaliando marque a opção <b>"Não se aplica"</b>. Insira as informações a seguir antes de começar a avaliação.</p></font>
- 			</div>
- 			<text align="center"><p><h4><font color="#26a69a">Nível de acessibilidade AAA</p></h4></text></font>
 
+ 			<div id="top" class="a"><h1>Avaliação de acessibilidade</h1>
+ 				<font size="2"><p><h6>Se o que está avaliando atende o requisito marque a opção <b>"Sim"</b>, caso contrário marque <b>"Não"</b>, mas se o requisito não se aplica ao que está avaliando marque a opção <b>"Não se aplica"</b>. Insira as informações a seguir antes de começar a avaliação.</h6></p></font>
+			 </div>
+			 
+ 			<text align="center"><p><h4><font color="#26a69a">Nível de acessibilidade AAA</p></h4></text></font>
  			<text align="justify"><b><p>Diretriz 1.2 Média Dinâmica ou Contínua: Fornecer alternativas para conteúdo em multimédia dinâmica ou temporal.</p></b></text>
  			<text align="justify"><p><b>1.2.6</b> Nos conteúdos em vídeos tem algum intérprete de língua de sinais?</br>
 			<i>Exemplo: uma estação de televisão fornece um intérprete de língua de sinais no canto ou ao lado do seu vídeo de notícias on-line.</i></p></text>
@@ -457,13 +459,18 @@
               <input name="b23" type="radio" checked />
               <span>Não se aplica</span>
           </label>
-  			</p>
+			  </p>
+			  
+			<div id="base">
 
-			<a href="nivelAA.html" class="btn waves-effect waves-light espaco center" target="_self" type="button"> Voltar seção </a>
+				<a href="nivelAA.html" class="btn waves-effect waves-light espaco center" target="_self" type="button"> Voltar seção </a>
 
-  			<button class="btn waves-effect waves-light red espaco" type="submit" name="action">Finalizar</button>
+				<button id="finalizar" class="btn waves-effect waves-light red espaco" type="submit" name="action">Finalizar</button>
+			
+			</div>
 
- 		</font>
+		 </font>
+		 </form>
  	</div>
 </body>
 </html>

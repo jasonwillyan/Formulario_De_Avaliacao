@@ -30,13 +30,13 @@ body {
 	padding-top: 20px;
 }
 
-#top {
+#cima {
 	position: fixed;
     right: 40px;
     top: 100px;
 }
 
-#nop {
+#baixo {
     position: fixed;
 	right: 40px;
 	top: 30px;
