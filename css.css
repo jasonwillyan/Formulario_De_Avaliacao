@@ -1,6 +1,3 @@
-body {
-	
-}
 
 .titulo{
 	text-align: center;
@@ -25,18 +22,13 @@ body {
 	padding-right: 50px;
 }
 
-.a{
-	text-align: center;
-	padding-top: 20px;
-}
-
-#cima {
+#baixo {
 	position: fixed;
     right: 40px;
     top: 100px;
 }
 
-#baixo {
+#cima {
     position: fixed;
 	right: 40px;
 	top: 30px;

@@ -12,9 +12,9 @@ $(document).ready(function(){
         console.log(btnId);
     
         if(btnId == "cima"){
-            scroll = btnbase;
-        }else if(btnId == "baixo"){
             scroll = btntop;
+        }else if(btnId == "baixo"){
+            scroll = btnbase;
         }
     
         $([document.documentElement, document.body]).animate({

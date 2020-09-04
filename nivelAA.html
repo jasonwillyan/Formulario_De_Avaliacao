@@ -4,7 +4,7 @@
 	
 	<meta charset="utf-8">
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="jquery.js"></script>
 	<script type="text/javascript" src="javascript.js"></script>
@@ -24,9 +24,9 @@
 	
 
 	<button id="md"class="btn waves-effect waves-light black" type="submit" name="action">Modo Escuro</button>
-	<a id="cima" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_downward</i></a>
-	<a id="baixo" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_upward</i></a>
-
+	<a id="cima" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_upward</i></a>
+	<a id="baixo" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_downward</i></a>
+	
 	<div class="meio">
 
 		<form name="form" method="post" action="page.html">
@@ -45,11 +45,13 @@
    				<label>
       				<input name="b1" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
       				<input name="b1" type="radio" />
    	  				<span>Não</span>
-    			</label>
+				</label>
+				
 				<label>
 					<input name="b1" type="radio" checked/>
 					<span>Não se aplica</span>
@@ -58,208 +60,264 @@
 			  
   			<text align="justify"><p><b>1.2.5</b> É fornecida audiodescrição para todo o conteúdo já gravado.</br>
         <i>Exemplo: um filme com audiodescrição: na cozinha, uma moça magra de cabelos pretos, curtos e com   óculos, sentada à mesa. Ela escreve em um caderno.</i></p></text>
-  			<p>
+			  
+			<p>
    				<label>
       				<input name="b2" type="radio"/>
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
       				<input name="b2" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b2" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
+				</label>
+				
+          		<label>
+             		<input name="b2" type="radio" checked />
+              		<span>Não se aplica</span>
+         		 </label>
+			</p>
+			  
   			<text align="justify"><b><p>Diretriz 1.4 Distinguível: Facilitar aos utilizadores a audição e a visão dos conteúdos nomeadamente através da separação do primeiro plano do plano de fundo.</p></b></text>
   			<text align="justify"><p><b>1.4.3</b> A apresentação visual de texto possui uma relação de contraste mínima de 4.5:1, exceto em:</br>
-       1. Texto em fontes grandes, com no mínimo tamanho 18 ou em negrito tamanho 14, nesse caso o contraste haverá de ser na proporção 3:1.</br>
-       2. O texto que faz parte inativa da interface, que são meramente decorativos, que não estão visíveis para ninguém, nesses caso não têm requisito de contraste.</br>
-       3. O texto que faz parte de um logótipo ou marca comercial não tem requisito de contraste.</br></p></text>
-  			<p>
+				1. Texto em fontes grandes, com no mínimo tamanho 18 ou em negrito tamanho 14, nesse caso o contraste haverá de ser na proporção 3:1.</br>
+				2. O texto que faz parte inativa da interface, que são meramente decorativos, que não estão visíveis para ninguém, nesses caso não têm requisito de contraste.</br>
+				3. O texto que faz parte de um logótipo ou marca comercial não tem requisito de contraste.</br></p>
+			</text>
+						
+	  		<p>
    				<label>
-      				<input name="b3" type="radio" checked />
+      				<input name="b3" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
-      				<input name="b3" type="radio" checked />
+      				<input name="b3" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b3" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
+				</label>
+				
+				<label>
+					<input name="b3" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			</p>
+			  
   			<text align="justify"><p><b>1.4.4</b> Redimensionamento do texto, exceto para legendas e texto sob forma de imagem. O texto pode ser redimensionado em até 200% sem perder conteúdo ou funcionalidade.</br>
-          <i>Exemplo: o usuário usa a função de zoom para ampliar a escala do conteúdo. Toda a escala do conteúdo é ajustada uniformemente, uma barra de rolagem é fornecida, se necessário.</i></p></text><p>
-   				<label>
-      				<input name="b4" type="radio" checked />
+          		<i>Exemplo: o usuário usa a função de zoom para ampliar a escala do conteúdo. Toda a escala do conteúdo é ajustada uniformemente, uma barra de rolagem é fornecida, se necessário.</i></p></text><p>
+				   
+			<p>
+				<label>
+      				<input name="b4" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
-      				<input name="b4" type="radio" checked />
+      				<input name="b4" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b4" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
+				</label>
+				
+				<label>
+					<input name="b4" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			</p>
+			  
   			<text align="justify"><p><b>1.4.5</b> Imagens de Texto: Se as tecnologias que estiverem utilizando uma apresentação visual, é utilizado o texto para transmitir as informações em vez de texto sob forma de imagens, exceto:</br>
-        Personalizável: O texto sob forma de imagem pode ser personalizada pelo usuário;</br>
-        Essencial: Se as informações que serão transmitidas pela imagem for essencial para apresentação.</br>
-        <i>Exemplo: cabeçalhos Estilizados: Ao invés de usar uma imagem vetorial com fonte e tamanho específico, o autor utiliza  o CSS para alcançar o mesmo resultado.</i></p></text>
+       			Personalizável: O texto sob forma de imagem pode ser personalizada pelo usuário;</br>
+       			Essencial: Se as informações que serão transmitidas pela imagem for essencial para apresentação.</br>
+				<i>Exemplo: cabeçalhos Estilizados: Ao invés de usar uma imagem vetorial com fonte e tamanho específico, o autor utiliza  o CSS para alcançar o mesmo resultado.</i></p>
+			</text>
+
   			<p>
    				<label>
-      				<input name="b5" type="radio" checked />
+      				<input name="b5" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+
  				<label>
-      				<input name="b5" type="radio" checked />
+      				<input name="b5" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b5" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
+				</label>
+				
+				<label>
+					<input name="b5" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			</p>
+			  
   			<text align="justify"><b><p>Diretriz 2.4 Navegável: Fornecer formas de ajudar os utilizadores a navegar, localizar conteúdos e determinar o local onde estão.</p></b></text>
   			<text align="justify"><p><b>2.4.5</b> Várias Formas: A página Web está disponível para ser localizada de diversas formas, exceto quando a Página Web for o resultado, ou um passo, de um processo.</br>
-        <i>Exemplo: links entre páginas Web. Um site que promove um serviço, contém outros links que alcançam outras páginas.</i></p></text>
+					<i>Exemplo: links entre páginas Web. Um site que promove um serviço, contém outros links que alcançam outras páginas.</i></p>
+			</text>
+
   			<p>
    				<label>
-      				<input name="b6" type="radio" checked />
+      				<input name="b6" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
-      				<input name="b6" type="radio" checked />
+      				<input name="b6" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b6" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
+				</label>
+				
+				<label>
+					<input name="b6" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			</p>
+			  
   			<text align="justify"><p><b>2.4.6</b> Os cabeçalhos e os rótulos descrevem o tema ou a finalidade.</br>
-        <i>Exemplo: um formulário que pergunta o Nome do usuário. Consiste em dois espaços para entrada para o nome e o sobrenome. O primeiro campo é rotulado de “Nome”, e o segundo de “Sobrenome”.</i></p></text>
+				   <i>Exemplo: um formulário que pergunta o Nome do usuário. Consiste em dois espaços para entrada para o nome e o sobrenome. O primeiro campo é rotulado de “Nome”, e o segundo de “Sobrenome”.</i></p>
+			</text>
+
   			<p>
    				<label>
-      				<input name="b7" type="radio" checked />
+      				<input name="b7" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
-      				<input name="b7" type="radio" checked />
+      				<input name="b7" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b7" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
+				</label>
+				
+				<label>
+					<input name="b7" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			  </p>
+			  
   			<text align="justify"><p><b>2.4.7</b> Foco Visível: Qualquer interface que se utilize de um teclado dispõe de um modo de operação em que indique o foco visível para uso do teclado.</br>
-        <i>Exemplo: quando um campo de texto recebe um foco, uma barra vertical aparece no campo indicando que o usuário pode inserir texto, ou todo o texto está em destaque indicando que o usuário escreva por cima do texto.</i>
-</p></text>
+      			<i>Exemplo: quando um campo de texto recebe um foco, uma barra vertical aparece no campo indicando que o usuário pode inserir texto, ou todo o texto está em destaque indicando que o usuário escreva por cima do texto.</i>
+			</p></text>
+
   			<p>
    				<label>
-      				<input name="b8" type="radio" checked />
+      				<input name="b8" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
-      				<input name="b8" type="radio" checked />
+      				<input name="b8" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b8" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
+				</label>
+				
+				<label>
+					<input name="b8" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			  </p>
+			  
   			<text align="justify"><b><p>Diretriz 3.1 Legível: Tornar o conteúdo textual legível e compreensível.</p></b></text>
   			<text align="justify"><p><b>3.1.2</b> Idioma das Partes: O idioma de cada frase ou trecho do conteúdo pode ser determinado de forma programática, determinado por software , exceto para os nomes próprios, os termos técnicos, palavras escritas num idioma indeterminado e palavras ou frases que se tornaram parte da língua materna.</br> 
-        <i>Exemplo: o termo “Podcast” utilizado em uma frase em francês. Porque "podcast" se tornaram parte da língua materna, portanto sendo uma exceção ao contexto utilizado. " le Palais des Beaux-Arts de Bruxelles a lancé son premier podcast. Vous pouvez télécharger ce podcast au format M4A et MP3," não indica que o termo haverá de sofrer uma tradução.</i>
-</p></text>
+        		<i>Exemplo: o termo “Podcast” utilizado em uma frase em francês. Porque "podcast" se tornaram parte da língua materna, portanto sendo uma exceção ao contexto utilizado. " le Palais des Beaux-Arts de Bruxelles a lancé son premier podcast. Vous pouvez télécharger ce podcast au format M4A et MP3," não indica que o termo haverá de sofrer uma tradução.</i>
+			</p></text>
+
   			<p>
    				<label>
-      				<input name="b9" type="radio" checked />
+      				<input name="b9" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
-      				<input name="b9" type="radio" checked />
+      				<input name="b9" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b9" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
+				</label>
+				
+				<label>
+					<input name="b9" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			</p>
+			  
   			<text align="justify"><b><p>Diretriz 3.2 Previsível: Fazer com que as páginas Web apareçam e funcionem de forma previsível.</p></b></text>
   			<text align="justify"><p><b>3.2.3</b> Consistência de Navegação: Os mecanismos de navegação que se repetem em várias páginas Web, aparecem sempre pela mesma ordem de cada vez que se repetem, a menos haja alteração pelo próprio usuário.</br>
-        <i>Exemplo: em um menu de navegação inclui uma lista de sete itens que conectam com as seções principais do site. Quando o usuário seleciona um desses itens, uma lista de itens de subnavegação é inserida no nível acima do menu de navegação.</i></p></text>
+				<i>Exemplo: em um menu de navegação inclui uma lista de sete itens que conectam com as seções principais do site. Quando o usuário seleciona um desses itens, uma lista de itens de subnavegação é inserida no nível acima do menu de navegação.</i></p>
+			</text>
+
   			<p>
    				<label>
-      				<input name="b10" type="radio" checked />
+      				<input name="b10" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
-      				<input name="b10" type="radio" checked />
+      				<input name="b10" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b10" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
+				</label>
+				
+				<label>
+					<input name="b10" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			</p>
+			  
   			<text align="justify"><p><b>3.2.4</b> Consistência de Identificação: Os componentes que têm a mesma funcionalidade, em páginas Web, são sempre identificados da mesma maneira.</br>
-          <i>Exemplo: o ícone de “Salvo” é usado por todo site onde há a função de salvar nas páginas</i></p></text>
+				  <i>Exemplo: o ícone de “Salvo” é usado por todo site onde há a função de salvar nas páginas</i></p>
+			</text>
+
   			<p>
    				<label>
-      				<input name="b11" type="radio" checked />
+      				<input name="b11" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
-      				<input name="b11" type="radio" checked />
+      				<input name="b11" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b11" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
+				</label>
+				
+				<label>
+					<input name="b11" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			</p>
+			  
   			<text align="justify"><b><p>Diretriz 3.3 Assistência na Inserção de Dados: Ajudar os utilizadores a evitar e a corrigir os erros.</p></b></text>
-  				<text align="justify"><p><b>3.3.3</b> Sugestão para eliminar o Erro: Se houver sugestão de correção automática, ou erro na inclusão de dados, então estas sugestões devem ser fornecidas ao usuário, a menos que estas possam comprometer a segurança ou a finalidade do conteúdo.</br>
-          <i>Exemplo: ajuda adicional para correção de erros de preenchimento. O resultado de um formulário não foi submetido com sucesso diante de um erro de preenchimento, ao invés da página corrigir automaticamente ela oferecerá uma ajuda demonstrando o que causou o erro no preenchimento.</i></p></text>
+  			<text align="justify"><p><b>3.3.3</b> Sugestão para eliminar o Erro: Se houver sugestão de correção automática, ou erro na inclusão de dados, então estas sugestões devem ser fornecidas ao usuário, a menos que estas possam comprometer a segurança ou a finalidade do conteúdo.</br>
+				  <i>Exemplo: ajuda adicional para correção de erros de preenchimento. O resultado de um formulário não foi submetido com sucesso diante de um erro de preenchimento, ao invés da página corrigir automaticamente ela oferecerá uma ajuda demonstrando o que causou o erro no preenchimento.</i></p>
+			</text>
+
   			<p>
    				<label>
-      				<input name="b12" type="radio" checked />
+      				<input name="b12" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
-      				<input name="b12" type="radio" checked />
+      				<input name="b12" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b12" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
-  			</p>
-  				<text align="justify"><p><b>3.3.4</b> Prevenção de Erros (Legais, Financeiros, Dados): Para páginas Web que representam responsabilidades jurídicas ou transações financeiras para o usuário, que modificam ou eliminam dados em sistemas de armazenamento ou que submetam respostas a um teste, no mínimo, pelo menos uma das seguintes afirmações é verdadeira:</br>
-          <b>Reversível:</b> O envio de informação são reversíveis.</br>
-          <b>Verificado:</b> Os dados postos pelo usuários são verificados se podem ser aceitáveis, e é dada ao usuário a possibilidade de corrigi-los.</br>
-          <b>Confirmado:</b> É disponível um processo para rever, confirmar e corrigir as informações antes do envio final de dados.</br>
-</p></text>
+				</label>
+				
+				<label>
+					<input name="b12" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			
+			</p>
+			  
+  			<text align="justify"><p><b>3.3.4</b> Prevenção de Erros (Legais, Financeiros, Dados): Para páginas Web que representam responsabilidades jurídicas ou transações financeiras para o usuário, que modificam ou eliminam dados em sistemas de armazenamento ou que submetam respostas a um teste, no mínimo, pelo menos uma das seguintes afirmações é verdadeira:</br>
+				<b>Reversível:</b> O envio de informação são reversíveis.</br>
+				<b>Verificado:</b> Os dados postos pelo usuários são verificados se podem ser aceitáveis, e é dada ao usuário a possibilidade de corrigi-los.</br>
+				<b>Confirmado:</b> É disponível um processo para rever, confirmar e corrigir as informações antes do envio final de dados.</br>
+			</p></text>
+
   			<p>
    				<label>
-      				<input name="b13" type="radio" checked />
+      				<input name="b13" type="radio" />
     	  			<span>Sim</span>
-    			</label>
+				</label>
+				
  				<label>
-      				<input name="b13" type="radio" checked />
+      				<input name="b13" type="radio" />
    	  				<span>Não</span>
-    			</label>
-          <label>
-              <input name="b13" type="radio" checked />
-              <span>Não se aplica</span>
-          </label>
+				</label>
+				
+				<label>
+					<input name="b13" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
   			</p>
 
 			<div id="base">
@@ -271,8 +329,10 @@
 				<button id="finalizar" class="btn waves-effect red espaco" type="submit" name="action">Finalizar</button>
 			
 			</div>
+
 		</font>
 		</form>
- 	</div>
+	 </div>
+	 
 </body>
 </html>
