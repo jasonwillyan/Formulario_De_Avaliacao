@@ -23,14 +23,14 @@
 	</script>
 	
 
-	<button id="md"class="btn waves-effect waves-light black" type="submit" name="action">Modo Escuro</button>
+	<button id="modoescuro"class="btn waves-effect waves-light black " type="submit" name="action">Modo Escuro</button>
 	<a id="cima" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_upward</i></a>
 	<a id="baixo" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_downward</i></a>
 	
 
 	<div class="meio">
 
-		<form name="form" method="post" action="page.html">
+		<form name="form" method="get" action="resultado.html">
 		<font face="arial">
 
 			<div id="top" class="a">
@@ -64,14 +64,14 @@
 				<b>Decoração, Formatação, Invisível:</b> Se o conteúdo não textual for meramente decorativo, se for utilizado apenas para formatação visual ou se não for apresentado aos utilizadores, então deve ser implementado de forma a poder ser ignorado pela tecnologia de apoio.
 				<i>Exemplo: Mudar toda a paleta de cores de uma página, ao solicitar o modo de alto contraste.</i></p></text>
 			
-			<p>
+			<p><input type="hidden" id="respostab1"/>
 				<label>
-					<input name="b1" type="radio" />
+					<input class="classbtt" name="b1" type="radio" />
 					<span>Sim</span>
 				</label>
 
 				<label>
-					<input name="b1" type="radio" />
+					<input class="classbtt" name="b1" type="radio" />
 					<span>Não</span>
 				</label>
 
@@ -618,7 +618,7 @@
 
 			<div id="base">
 
-				<a  href="nivelAA.html" class="btn waves-effect waves-light espaco right" target="_self" type="button"> avaliação nível AA </a>
+				<a  id="irAA" href="nivelAA.html" class="classbtt" class="btn waves-effect waves-light espaco right" target="_self" type="button"> avaliação nível AA </a>
 				
 				<button id="finalizar" class="btn waves-effect waves-light red espaco" type="submit" name="submit" value="Finalizar" onclick="formdata()"> Finalizar </button>
 			

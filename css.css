@@ -35,7 +35,7 @@
     
 }
 
-#md {
+#modoescuro {
 	position: fixed;
 	top: 30px;
 	left:20px;
@@ -45,4 +45,10 @@
 .textbox::-webkit-input-placeholder{
 	color: rgb(0,0,0);
 }
+
+.rodape{
+	margin-top: 13%;
+}
+
+
 

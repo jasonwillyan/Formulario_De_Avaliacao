@@ -1,4 +1,4 @@
-/ <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -17,20 +17,20 @@
 	<script>
 
 		$(function(){
-			alert('VAMPIRO NÃO BRILHA NO SOL, VAMPIRO MONALISA');
+			alert(localStorage.getItem("teste"));
 		});
 
 	</script>
 
 
-	<button id="md"class="btn waves-effect waves-light black" type="submit" name="action">Modo Escuro</button>
+	<button id="modoescuro"class="btn waves-effect waves-light black " type="submit" name="action">Modo Escuro</button>
 	<a id="cima" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_upward</i></a>
 	<a id="baixo" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_downward</i></a>
 	
 
 	<div class="meio">
 
-		<form name="form" method="post" action="page.html">
+		<form name="form" method="get" action="resultado.html">
  		<font face="arial">
 
  			<div id="top">
