@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+	<title>Avaliação de acessibilidade</title>
+
+</head>
+
+<body background="5.jpg">
+
+	<button id="modoescuro"class="btn waves-effect waves-light black " type="submit" name="action">Modo Escuro</button>
+	<a id="cima" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_upward</i></a>
+	<a id="baixo" class="btn-floating btn-large waves-effect waves-light btnNavegacao"><i class="medium material-icons">arrow_downward</i></a>
+	
+	<div class="meio">
+
+		<form name="form" method="post" action="resultado.html">
+		<font face="arial">
+
+			<div id="top" class="a">
+				<p class="titulo">Avaliação de Acessibilidade</p>
+				<text align="justify"><font size="2"><h6><p>Se o que está avaliando atende o requisito marque a opção <b>"Sim"</b>, caso contrário marque <b>"Não"</b>, mas se o requisito não se aplica ao que está avaliando marque a opção <b>"Não se aplica"</b>. Insira as informações a seguir antes de começar a avaliação.</h6></font></text><br><br>
+			</div>
+	
+			<text align="left"><p><h6><font color="#26a69a"><b>Informações do Avaliador</b></p></h6></text></font>
+			<input id="idnomecompleto" name="nomecompleto" class="textbox"  type="text" placeholder="Nome Completo">
+			<input id="idemail" name="email" class="textbox"  type="text" placeholder="E-mail">
+			<text align="left"><p><h6><font color="#26a69a"><b>O que está Avaliando?</b></p></h6></text></font>
+			<input id="idnomeconteudo" name="nomeconteudo" class="textbox"  type="text" placeholder="Nome">
+			<input id="idurl" name="url" class="textbox" type="text" placeholder="Endereço web (Não é obrigatório)">
+		
+			<text align="center"><p><h4><font color="#26a69a">Nível de acessibilidade A</p></h4></text></font>
+
+			<text align="justify"><p><b>Diretriz 1.1 Alternativas em Texto: Fornecer alternativas em texto para todo o conteúdo não textual de modo a que o mesmo possa ser apresentado de outras formas, de acordo com as necessidades dos utilizadores, como por exemplo: caracteres ampliados, braille, fala, símbolos ou uma linguagem mais simples.</b></p></text>
+
+			<text align="justify"><p><b>1.1.1</b> Todo o conteúdo que não estiver em texto, apresenta uma alternativa em texto que, serve como descritor equivalente. Excluindo esses casos:</br>
+				<b>Controle, inserção de dados:</b> Se o conteúdo não textual for um controle ou permitir ao usuário inserir dados. Então deve possuir um nome que descreva sua função.</br>
+				<i>Exemplo: Campos de texto de pesquisa, como o do google.</i></br>
+				<b>Conteúdo em multimídia dinâmica ou temporal:</b> Se o conteúdo não textual, for de multimídia dinâmica (Animações, Vídeos, Áudios...). Então deve possuir alternativa em texto que forneça uma identificação descritiva do que acontece nesse conteúdo.</br>
+				<i>Exemplo: Legendas em vídeo.</i></br>
+				<b>Teste:</b> Se o conteúdo não textual for um teste ou exercício, que pode se tornar inválido na presença de texto. Então deve possuir alternativas em texto que ofereçam uma identificação descritiva do conteúdo não textual.</br>
+				<i>Exemplo: Descrição em texto dos critérios avaliativos e forma de resolução de questões em uma prova.</i></br>
+				<b>Experiência Sensorial:</b> Se o objetivo do conteúdo não textual for, essencialmente, a criação de uma experiência sensorial específica. Então deve possuir alternativas, em texto, que forneçam uma identificação descritiva do conteúdo não textual.</br>
+				<b>CAPTCHA:</b> Se o objetivo do conteúdo não textual for obter a confirmação de que o conteúdo está sendo acessado por uma pessoa e não por um computador, então devem ser fornecidas alternativas em texto para identificar e descrever a finalidade desse conteúdo não textual. Nesse caso as formas alternativas do CAPTCHA, que utilizam modos de saída para diferentes tipos de percepção sensorial, devem ser apresentadas de forma a responder a diferentes tipos de incapacidades.</br>
+				<i>Exemplo: Texto descritivo de função do CAPTCHA.</i></br>
+				<b>Decoração, Formatação, Invisível:</b> Se o conteúdo não textual for meramente decorativo, se for utilizado apenas para formatação visual ou se não for apresentado aos utilizadores, então deve ser implementado de forma a poder ser ignorado pela tecnologia de apoio.
+				<i>Exemplo: Mudar toda a paleta de cores de uma página, ao solicitar o modo de alto contraste.</i></p></text>
+			
+			<p><input type="hidden" id="respostab1" class="resposta"/>
+				<label>
+					<input class="classbtt" name="b1" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input class="classbtt" name="b1" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input class="classbtt" name="b1" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+			</p>
+
+			<text align="justify"><p><b>Diretriz 1.2 É fornecido Alternativas para conteúdo em multimídia dinâmica ou temporal.</b></p>
+			<text align="justify"><p><b>1.2.1</b> Conteúdo só de áudio ou vídeo pré-gravados Para mídias compostas apenas de vídeos ou áudios pré-gravados, as regras abaixo são aplicadas, a não ser quando o conteúdo gravado é uma alternativa ao textual e é claramente identificado como isso.</br>
+				<b>Apenas áudio pré-gravado:</b> Precisa ser fornecida uma mídia dinâmica, com informação equivalente, como alternativa ao conteúdo pré-gravado.</br>
+				<b>Apenas vídeo pré-gravado:</b> Precisa ser fornecida uma mídia dinâmica ou uma faixa de áudio, com informação equivalente, como alternativa ao conteúdo pré-gravado.</p>
+			</text>
+
+			<p><input type="hidden" id="respostab2" class="resposta"/>
+				<label>
+					<input name="b2" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b2" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b2" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>1.2.2</b> São fornecidas legendas para todo o conteúdo de áudio presente em conteúdos multimídias sincronizados, a não ser que o conteúdo gravado já seja uma alternativa ao texto e seja claramente identificado como tal.</br>
+				<i>Exemplo: Um documento jurídico complexo contém clipes de mídia sincronizados para diferentes parágrafos que mostram uma pessoa falando o conteúdo do parágrafo. Cada clipe está associado ao seu parágrafo correspondente. Nenhuma legenda é fornecida para a mídia sincronizada.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab3" class="resposta"/>
+				<label>
+					<input name="b3" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b3" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b3" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>1.2.3</b> É fornecida descrição em áudio ou uma alternativa em multimídia dinâmica para o vídeo pré-gravado presente no conteúdo multimídia sincronizado, exceto quando esse conteúdo for claramente identificado como alternativa ao texto.</br>
+				<i>Exemplo: uma alternativa para mídia baseada em tempo para um vídeo de treinamento.</br>
+				Uma empresa compra um vídeo de treinamento para uso de seus funcionários e o coloca na intranet da empresa. O vídeo envolve explicar o uso de uma nova tecnologia e uma pessoa fala e mostra as coisas ao mesmo tempo. Como não há lugar para inserir uma descrição em áudio das demonstrações visuais durante as lacunas no diálogo, a empresa fornece uma alternativa para a mídia baseada no tempo que todos os funcionários, incluindo aqueles que não podem ver as demonstrações, podem usar para entender melhor o que está sendo apresentado.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab4" class="resposta"/>
+				<label>
+					<input name="b4" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b4" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b4" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>Diretriz 1.3 Adaptável: Criar conteúdo que possa ser apresentado de diferentes formas (por ex., um esquema de página mais simples) sem perder informação ou estrutura.</b></p></text>
+			<text align="justify"><p><b>1.3.1</b> Informações e Relações As informações, a estrutura da página e as suas associações internas transmitidas através de apresentação podem ser disponibilizadas pelo autor de forma a serem exibidas de diferentes formas pelas tecnologias de apoio ou por softwares que consigam apresentar o conteúdo da web, ou podem ficar disponíveis no texto.</br>
+				<i>Exemplo: um formulário com campos obrigatórios</br>
+				Um formulário contém vários campos obrigatórios. Os rótulos dos campos obrigatórios são exibidos em vermelho. Além disso, no final de cada rótulo, há um caractere asterisco *. As instruções para preencher o formulário indicam que "todos os campos obrigatórios são exibidos em vermelho e marcados com um asterisco *", seguidos de um exemplo.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab5" class="resposta"/>
+				<label>
+					<input name="b5" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b5" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b5" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>1.3.2</b> Quando a sequência na qual o conteúdo é apresentado afeta o seu significado, uma sequência de leitura correta pode ser disponibilizada pelo autor de modo a ser exibida de diferentes formas pelas tecnologias de apoio ou por softwares que consigam apresentar o conteúdo da web.</br>
+				<i>Exemplo: Em um documento com várias colunas, a apresentação linear do conteúdo flui da parte superior de uma coluna para a parte inferior da coluna e depois para o topo da próxima coluna.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab6" class="resposta"/>
+				<label>
+					<input name="b6" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b6" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b6" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>1.3.3</b> Características Sensoriais As instruções fornecidas para compreender e utilizar o conteúdo não dependem somente das características de percepção sensorial dos componentes, tais como forma, tamanho, localização visual, orientação ou som.</br>
+				<i>Exemplo: Prover guia textual com características visuais e espaciais, como por exemplo: “Use o botão redondo no fundo da página à direita, intitulado submeter, para enviar o formulário”.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab7" class="resposta"/>
+				<label>
+					<input name="b7" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b7" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b7" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>Diretriz 1.4 Distinguível: Facilitar aos utilizadores a audição e a visão dos conteúdos nomeadamente através da separação do primeiro plano do plano de fundo.</b></p>
+			<text align="justify"><p><b>1.4.1</b> É garantido que as informações transmitidas pelas diferenças de cores também estejam disponíveis no texto?</br>
+				<i>Exemplo: uma programação codificada por cores com ícones.</br>
+				O cronograma das sessões em uma conferência de tecnologia é organizado em três faixas. Ao lado do título de cada sessão, há um ícone que consiste em um círculo colorido com um número no meio, mostrando a qual faixa pertence: círculos azuis com o número 1 representam a faixa 1, círculos amarelos com o número 2 representam a faixa 2 e verde os círculos com o número 3 representam a faixa 3. Cada ícone está associado a uma alternativa de texto com a indicação "Faixa 1", "Faixa 2" ou "Faixa 3", conforme apropriado.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab8" class="resposta"/>
+				<label>
+					<input name="b8" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b8" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b8" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>1.4.2</b> Se algum áudio em uma página da Web for reproduzido automaticamente por mais de 3 segundos, um mecanismo estará disponível para pausar ou parar o áudio ou um mecanismo para controlar o volume do áudio independentemente do nível geral do volume do sistema.</br>
+				<i>Exemplo 1: Uma página inicial do Flash com som que é reproduzido e depois pára em menos de 3 segundos.</br>
+				Exemplo 2: Um arquivo de áudio começa a ser reproduzido automaticamente quando uma página é aberta. No entanto, o áudio pode ser parado pelo usuário selecionando um link "silencioso" na parte superior da página.</i>
+			</text>
+			
+			<p><input type="hidden" id="respostab9" class="resposta"/>
+				<label>
+					<input name="b9" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b9" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b9" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>Diretriz 2.1 Acessível por Teclado: Fazer com que toda a funcionalidade fique disponível a partir do teclado.</b></p></text>
+			<text align="justify"><p><b>2.1.1</b> Toda a funcionalidade do conteúdo é operável por meio de uma interface do teclado sem exigir horários específicos para pressionamentos de teclas individuais, exceto quando a função subjacente requer entrada que depende do caminho do movimento do usuário e não apenas dos pontos finais.</br>
+				<i>Exemplo: Um programa de desenho.</br>
+				Um programa de desenho permite aos usuários criar, dimensionar, posicionar e girar objetos a partir do teclado.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab10" class="resposta"/>
+				<label>
+					<input name="b10" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b10" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b10" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			<text align="justify"><p><b>2.1.2</b> Se o foco do teclado puder ser movido para um componente da página usando uma interface de teclado, o foco poderá ser desviado desse componente usando apenas uma interface de teclado e, se exigir mais do que teclas de seta ou tabulação não modificadas ou outros métodos de saída padrão, o usuário é aconselhado sobre o método de afastar o foco.</br>
+				<i>Exemplo: um widget de calendário.</br>
+				Um widget de calendário permite aos usuários adicionar, remover ou atualizar itens em seus calendários usando o teclado. Os controles no widget fazem parte da ordem das guias na página da Web, permitindo que os usuários sigam os controles no widget, bem como os links ou controles a seguir.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab11" class="resposta"/>
+				<label>
+					<input name="b11" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b11" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b11" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>Diretriz 2.2 Tempo Suficiente: Proporcionar aos utilizadores tempo suficiente para lerem e utilizarem o conteúdo.</b></p></text>
+			<text align="justify"><p>2.2.1 Tempo Ajustável: Para cada limite de tempo definido pelo conteúdo, no mínimo, uma das seguintes afirmações é verdadeira:</br>
+				<b>Desligar:</b> O usuário pode desligar o limite de tempo antes de atingi-lo; ou<br/>
+				<b>Ajustar:</b> O usuário pode ajustar o limite de tempo antes de atingi-lo, num intervalo de, no mínimo, dez vezes mais do que a configuração padrão; ou<br/>
+				<b>Prolongar:</b> O usuário é avisado antes de o tempo expirar e tem, no mínimo, 20 segundos para prolongar o limite de tempo com uma simples ação (por exemplo, "pressionar a barrade espaços"), e o usuário pode prolongar o limite de tempo, no mínimo, dez vezes; ou<br/>
+				<b>Exceção em Tempo Real:</b> O limite de tempo é uma parte necessária de um evento em tempo real (por exemplo, um leilão), e não é possível nenhuma alternativa ao limite de tempo; ou<br/>
+				<b>Exceção Essencial:</b> O limite de tempo é essencial e prolongá-lo invalidaria a atividade; ou<br/>
+				<b>Exceção de 20 Horas:</b> O limite de tempo é superior a 20 horas.</br>
+				<i>Exemplo: um site usa um limite de tempo no lado do cliente para ajudar a proteger os usuários que podem se afastar do computador. Após um período de inatividade, a página da Web pergunta se o usuário precisa de mais tempo. Se não receber uma resposta, o tempo limite será atingido.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab12" class="resposta"/>
+				<label>
+					<input name="b12" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b12" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b12" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>2.2.2</b> Para mover, piscar, rolar ou atualizar informações automaticamente, tudo o que se segue é verdadeiro:</br> 
+				<b>Movendo, piscando, rolando:</b> Para qualquer informação de movimento, piscamento ou rolagem que (1) inicie automaticamente, (2) dure mais de cinco segundos e (3) seja apresentada em paralelo com outro conteúdo, existe um mecanismo para o usuário pause, pare ou oculte, a menos que o movimento, piscar ou rolar faça parte de uma atividade onde é essencial; e</br>
+				<b>Atualização automática:</b> para qualquer informação de atualização automática que (1) inicie automaticamente e (2) seja apresentada paralelamente a outro conteúdo, existe um mecanismo para o usuário pausar, parar ou ocultar ou controlar a frequência do atualizar, a menos que a atualização automática faça parte de uma atividade em que é essencial.</br>
+				<i>Exemplo: uma animação essencial pode ser pausada sem afetar a atividade
+				Um site ajuda os usuários a entender 'como as coisas funcionam' por meio de animações que demonstram processos. As animações têm os botões "pausar" e "reiniciar".</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab13" class="resposta"/>
+				<label>
+					<input name="b13" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b13" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b13" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>Diretriz 2.3 Convulsões: Não criar conteúdo de uma forma que se sabe que pode causar convulsões.</b></p></text>
+			<text align="justify"><p><b>2.3.1</b> As páginas da Web não contêm nada que pisque mais de três vezes em um segundo período, ou o flash está abaixo dos limites gerais de flash e vermelho.</br>
+				<i>Exemplo: um filme com uma cena que envolve relâmpagos muito brilhantes é editado para que o relâmpago pisque apenas três vezes em um segundo.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab14" class="resposta"/>
+				<label>
+					<input name="b14" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b14" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b14" type="radio" checked />
+					<span>Não e aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>Diretriz 2.4 Navegável: Fornecer formas de ajudar os utilizadores a navegar, localizar conteúdos e determinar o local onde estão.</b></p></text>
+			<text align="justify"><p><b>2.4.1</b>  Está disponível um mecanismo para ignorar blocos de conteúdo repetidos em várias páginas da Web.</br>
+				<i>Exemplo: um site de comércio eletrônico inclui uma longa lista de filtros antes da listagem dos resultados da pesquisa. Um link acima da lista permite que os usuários pulem os filtros e cheguem rapidamente aos resultados do produto.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab15" class="resposta"/>
+				<label>
+					<input name="b15" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b15" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b15" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>2.4.2</b> As páginas da Web possuem títulos que descrevem tópico ou finalidade.</br>
+				<i>Exemplo: uma página da Web em HTML</br>
+				O título descritivo de uma página da Web em HTML é marcado com o elemento < t i t l e > para que seja exibido na barra de título do agente do usuário.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab16" class="resposta"/>
+				<label>
+					<input name="b16" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b16" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b16" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>2.4.3</b> Se uma página da Web puder ser navegada sequencialmente e as seqüências de navegação afetarem o significado ou a operação, os componentes focalizáveis ​​receberão o foco em uma ordem que preservará o significado e a operacionalidade.</br>
+				<i>Exemplo: em uma página da web que contém uma árvore de controles interativos, o usuário pode usar as teclas de seta para cima e para baixo para mover de um nó para outro. Pressionar a tecla de seta para a direita expande um nó e, em seguida, usar a tecla de seta para baixo passa para os nós recém-expandidos.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab17" class="resposta"/>
+				<label>
+					<input name="b17" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b17" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b17" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			<text align="justify"><p><b>2.4.4</b>  O objetivo de cada link pode ser determinado apenas a partir do texto do link ou do texto do link, juntamente com seu contexto de link determinado programaticamente , exceto onde o objetivo do link seria ser ambíguo para os usuários em geral.</br>
+				<i>Exemplo: resumos de artigos de notícias</br>
+				Uma página da Web contém uma coleção de artigos de notícias. A página principal lista as primeiras frases de cada artigo, seguidas por um link "Leia mais". Um comando do leitor de tela para ler o parágrafo atual fornece o contexto para interpretar a finalidade do link.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab18" class="resposta"/>
+				<label>
+					<input name="b18" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b18" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b18" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>Diretriz 3.1 Legível: Tornar o conteúdo textual legível e compreensível.</b></p></text>
+			<text align="justify"><p><b>3.1.1</b> O idioma humano padrão de cada página da Web pode ser determinado programaticamente.</br>
+				<i>Exemplo: uma página da Web com conteúdo em dois idiomas.</br>
+				Uma página da Web produzida na Alemanha e escrita em HTML inclui conteúdo em alemão e inglês, mas a maior parte do conteúdo está em alemão. O idioma humano padrão é identificado como alemão (de) pelo atributo lang no elemento html.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab19" class="resposta"/>
+				<label>
+					<input name="b19" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b19" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b19" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>Diretriz 3.2 Previsível: Fazer com que as páginas Web apareçam e funcionem de forma previsível.</b></p></text>
+			<text align="justify"><p><b>3.2.1</b> Quando qualquer componente da interface do usuário recebe o foco, ele não inicia uma mudança de contexto.</br>
+				<i>Exemplo de uma falha: um diálogo de ajuda.</br>
+				Quando um campo recebe o foco, uma janela de diálogo de ajuda descrevendo o campo e fornecendo opções é aberta. À medida que um usuário do teclado percorre a página da Web, a caixa de diálogo é aberta, afastando o foco do teclado do controle toda vez que o usuário tenta percorrer o campo.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab20" class="resposta"/>
+				<label>
+					<input name="b20" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b20" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b20" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>3.2.2</b> Alterar a configuração de qualquer componente da interface do usuário não causa automaticamente uma mudança de contexto, a menos que o usuário tenha sido avisado sobre o comportamento antes de usar o componente.</br>
+				<i>Exemplo: Um formulário contém campos que representam os números de telefone dos EUA. Todos os números têm um código de área de três dígitos, seguido de um prefixo de três dígitos e, finalmente, um número de quatro dígitos, e cada parte do número de telefone é inserida em um campo separado. Quando o usuário preenche a entrada de um campo, o foco passa automaticamente para o próximo campo do número de telefone. Esse comportamento dos campos telefônicos é descrito para o usuário no início do formulário.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab21" class="resposta"/>
+				<label>
+					<input name="b21" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b21" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b21" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>Diretriz 3.3 Assistência na Inserção de Dados: Ajudar os utilizadores a evitar e a corrigir os erros.</b></p></text>
+			<text align="justify"><p><b>3.3.1</b> Se um erro de entrada for detectado automaticamente, o item que está com erro é identificado e o erro é descrito para o usuário em texto.</br>
+				<i>Exemplo: o usuário falha ao preencher dois campos no formulário. Além de descrever o erro e fornecer um caractere exclusivo para facilitar a pesquisa dos campos, os campos são destacados em amarelo para facilitar a pesquisa visual deles também.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab22" class="resposta"/>
+				<label>
+					<input name="b22" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b22" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b22" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>3.3.2</b>  Etiquetas ou instruções são fornecidas quando o conteúdo requer entrada do usuário.</br>
+				<i>Exemplo: um campo para inserir uma data contém um texto inicial que indica o formato correto para a data.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab23" class="resposta"/>
+				<label>
+					<input name="b23" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b23" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b23" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>Diretriz 4 Compatível: Maximizar a compatibilidade com os agentes de utilizador atuais e futuros, incluindo as tecnologias de apoio.</b></p></text>
+			<text align="justify"><p><b>4.1.1</b> No conteúdo implementado usando linguagens de marcação, os elementos possuem tags de início e de término completas, os elementos são aninhados de acordo com suas especificações, os elementos não contêm atributos duplicados e os IDs são únicos, exceto onde as especificações permitirem esses recursos.</p>
+			</text>
+			
+			<p><input type="hidden" id="respostab24" class="resposta"/>
+				<label>
+					<input name="b24" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b24" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b24" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+			
+			<text align="justify"><p><b>4.1.2</b> Para todos os componentes da interface do usuário (incluindo, entre outros: elementos do formulário, links e componentes gerados por scripts), o nome e a função podem ser determinados programaticamente; estados, propriedades e valores que podem ser definidos pelo usuário podem ser programados; e a notificação de alterações nesses itens está disponível para agentes do usuário, incluindo tecnologias de assistência.</br>
+				<i>Exemplo: APIs acessíveis</br>
+				Um applet Java usa a API de acessibilidade definida pelo idioma.</i></p>
+			</text>
+			
+			<p><input type="hidden" id="respostab25" class="resposta"/>
+				<label>
+					<input name="b25" type="radio" />
+					<span>Sim</span>
+				</label>
+
+				<label>
+					<input name="b25" type="radio" />
+					<span>Não</span>
+				</label>
+
+				<label>
+					<input name="b25" type="radio" checked />
+					<span>Não se aplica</span>
+				</label>
+
+			</p>
+
+			<div id="base">
+
+				<a id="irAA" href="nivelAA.html" class="classbtt" class="btn waves-effect waves-light espaco right" target="_self" type="button"> avaliação nível AA </a>
+				
+				<button id="finalizar" class="btn waves-effect waves-light red espaco" type="submit" name="submit" value="Finalizar" > Finalizar </button>
+			
+			</div>
+
+		</font>
+		</form>
+	</div>
+
+</body>
+</html>
